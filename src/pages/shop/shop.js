@@ -11,7 +11,7 @@ export default class ShopPage extends Component {
 
       this.state = {
           collections : ShopData
-      }
+      };
     }
 
     render() {
