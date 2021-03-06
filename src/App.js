@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Switch, Route, Redirect } from 'react-router-dom';
 import {connect} from 'react-redux';
 import { createStructuredSelector } from 'reselect';
@@ -10,54 +10,24 @@ import ShopPage from './pages/shop/shop';
 import Header from './components/header/header';
 import AuthPage from  './pages/auth/auth';
 import CheckoutPage from './pages/checkout/checkout';
-
-import { auth, createUserProfileDocument } from './firebase/firebase.utils';
-import { setCurrentUser } from './redux/user/user.actions';
+import {checkUserSession} from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selector';
 
 
 
-class App extends React.Component{
+const App = ({checkUserSession, currentUser}) => {
+
  
-  unsubscribeFromAuth = null;
-
-  componentDidMount(){
-
-    const {setCurrentUser} = this.props;
+   useEffect(() => {
+     checkUserSession();
+   },[checkUserSession]);
   
-    this.unsubscribeFromAuth =  auth.onAuthStateChanged(async userAuth=>{
-      if(userAuth){
-        
-        const userRef =  await createUserProfileDocument(userAuth)
-
-        userRef.onSnapshot(Snapshot=>{
-          setCurrentUser({
-            currentUser: {
-              id: Snapshot.id,
-              ...Snapshot.data()
-
-            }
-          })
-            
-        });
-        
-      }
-      setCurrentUser(userAuth);
-      // addCollectionAndDocuments(
-      //   'collections',
-      //  collectionsArray.map(({title,items}) =>
-      // ({title, items})));
-    
-      
-     })
-  }
-
-  componentWillUnmount(){
-    this.unsubscribeFromAuth();
-  }
+  // unsubscribeFromAuth = null;
 
 
-  render(){
+
+
+  
       return(
      <div>
       <Header />
@@ -68,22 +38,16 @@ class App extends React.Component{
       <Route exact path='/signin'
     
        render={()=>
-         this.props.currentUser?(
+         currentUser?(
        <Redirect to='/' />
        ): (
        <AuthPage/>
        )
        } />
-
-      
-     
-      </Switch>
+     </Switch>
        
-   
     </div> 
   )
-
-  }
 
   
 }
@@ -94,10 +58,9 @@ class App extends React.Component{
 
  })
 
-const mapDispatchToProps = dispatch => ({
-     setCurrentUser: user => dispatch(setCurrentUser(user))
-     
-})
+ const mapDispatchToProps = dispatch => ({
+   checkUserSession: () => dispatch(checkUserSession())
+ })
 
 
-export default connect(mapStateToProps,mapDispatchToProps )(App);
+export default connect(mapStateToProps,mapDispatchToProps)(App);
