@@ -17,16 +17,9 @@ import { selectCurrentUser } from './redux/user/user.selector';
 
 const App = ({checkUserSession, currentUser}) => {
 
- 
    useEffect(() => {
      checkUserSession();
    },[checkUserSession]);
-  
-  // unsubscribeFromAuth = null;
-
-
-
-
   
       return(
      <div>
