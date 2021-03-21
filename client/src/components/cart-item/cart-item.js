@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './cart-item.scss';
+import { selectCartItemsCount } from '../../redux/cart/cart.selectors';
 
 
 const CartItem = ({item: {imageUrl, price, name, quantity} } ) => (
