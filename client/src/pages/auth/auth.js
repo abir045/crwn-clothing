@@ -1,15 +1,17 @@
 import React from 'react';
 import SignIn from '../../components/sign-in/sign-in';
 import SignUp from '../../components/sign-up/sign-up';
-import './auth.scss';
+//import './auth.scss';
+
+import {AuthPageContainer} from './auth.styles';
 
 
 const AuthPage = ( ) => (
-    <div className="sign-in-and-sign-up">
+    <AuthPageContainer>
         <SignIn />
         <SignUp/>
 
-    </div>
+    </AuthPageContainer>
 )
 
 export default AuthPage;
