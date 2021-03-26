@@ -12,21 +12,43 @@ import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import {selectCurrentUser } from  '../../redux/user/user.selector';
 import { signOutStart} from '../../redux/user/user.actions';
 
-import {HeaderContainer, LogoContainer, OptionsContainer, OptionLink, OptionDiv }  from './header.styles'
+import {HeaderContainer, LogoContainer, OptionsContainer, OptionLink,ShopContainer, OptionDiv }  from './header.styles'
 
 //import './header.scss';
 
 import { ReactComponent as Logo} from '../../assets/crown.svg';
 
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Dropdown from 'react-bootstrap/Dropdown';
+
+
 const Header = ({currentUser, hidden, signOutStart }) => (
     <HeaderContainer>
         <LogoContainer to='/' >
           <Logo className="logo"/>
-
+        
         </LogoContainer>
+      
+      <ShopContainer>
+          <DropdownButton variant='secondary' id="dropdown-item-button" title="Shop">
+ 
+  <Dropdown.Item href="action-1">
+      <OptionLink to='/shop'>Shop</OptionLink>
+   
+      </Dropdown.Item>
+  <Dropdown.Item href="#/action-1">Sale</Dropdown.Item>
+  <Dropdown.Item href="#/action-1">T-shirts</Dropdown.Item>
+</DropdownButton>
+
+</ShopContainer>
+            
+
+
+            
+        
         <OptionsContainer>
-            <OptionLink to='/shop'>
-            shop
+            <OptionLink to='/about'>
+            About
             </OptionLink>
             <OptionLink to='/contact'>
             Contact
@@ -49,6 +71,8 @@ const Header = ({currentUser, hidden, signOutStart }) => (
            
            <CartDropdown/> 
         }
+
+       
         </HeaderContainer>
 )
 

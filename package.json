@@ -15,9 +15,14 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "bootstrap": "^4.6.0",
     "compression": "1.7.4",
     "dotenv": "7.0.0",
     "express": "^4.16.4",
+    "react-bootstrap": "^1.5.2",
+    "react-page-scroller": "^2.1.0",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
     "stripe": "6.28.0"
   },
   "devDependencies": {

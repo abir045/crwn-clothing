@@ -5,6 +5,7 @@ import { createStructuredSelector } from 'reselect';
 
 
 
+
 import HomePage from './pages/homepage/homepage';
 import ShopPage from './pages/shop/shop';
 import Header from './components/header/header';
@@ -13,8 +14,11 @@ import CheckoutPage from './pages/checkout/checkout';
 import {checkUserSession} from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selector';
 
+
 import { GlobalStyle } from './global.styles';
 
+import SimpleSlider from './components/slick-carousel/carousel';
+import ReactPageScroller from 'react-page-scroller'
 
 
 const App = ({checkUserSession, currentUser}) => {
@@ -22,15 +26,53 @@ const App = ({checkUserSession, currentUser}) => {
    useEffect(() => {
      checkUserSession();
    },[checkUserSession]);
+
+   
+ 
+  
+
+
   
       return(
+        
      <div>
+     
+       
+        
+      
       <GlobalStyle/>
+      
       <Header />
-      <Switch>
-      <Route exact path='/' component={HomePage} />
+      
+   
+
+   
+      <Switch> 
+         
+      
+  <Route exact path='/'
+      render={() =>
+ 
+  <React.Fragment>
+  
+      
+    <ReactPageScroller containerHeight='100vh'>
+        
+    <SimpleSlider/>
+    <HomePage/>
+ 
+    
+   
+   </ReactPageScroller >
+  </React.Fragment>
+
+}  /> 
+        
+      
       <Route path='/shop' component={ShopPage} />
-      <Route exact path='/checkout' component={CheckoutPage} />
+     <Route exact path='/checkout' component={CheckoutPage} />
+    
+     
       <Route exact path='/signin'
     
        render={()=>
@@ -40,9 +82,15 @@ const App = ({checkUserSession, currentUser}) => {
        <AuthPage/>
        )
        } />
-     </Switch>
        
+       
+     </Switch>
+     
+    
+     
     </div> 
+    
+   
   )
 
   

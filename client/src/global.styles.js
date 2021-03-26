@@ -4,8 +4,12 @@ import { createGlobalStyle } from 'styled-components';
 
 body {
   font-family: "Open Sans Condensed";
-  padding: 20px 60px;
+  margin:0;
   background: #79a9bc;
+  opacity:0.9;
+  padding: 0px 0px 0px 0px;
+  //transparent;
+  //#79a9bc;
     /* fallback for old browsers */
   
   /* background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  */
@@ -17,18 +21,21 @@ body {
 
 
   @media screen and (max-width: 800px){
-      padding: 10px;
+      padding: 0px;
   }
 }
 
 a {
   text-decoration: none;
   color: black;
+  font-weight: 32px;
 }
 
 * {
   box-sizing: border-box;
 }
+
+
 
 `;
 
