@@ -18,7 +18,7 @@ import { selectCurrentUser } from './redux/user/user.selector';
 import { GlobalStyle } from './global.styles';
 
 import SimpleSlider from './components/slick-carousel/carousel';
-import ReactPageScroller from 'react-page-scroller'
+import ReactPageScroller from 'react-page-scroller';
 
 
 const App = ({checkUserSession, currentUser}) => {

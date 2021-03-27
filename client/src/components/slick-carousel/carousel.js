@@ -4,21 +4,12 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import ScrollableContainer from "react-full-page-scroll";
-
 import './carousel.scss';
-
-
-
-
 
 
 export default function SimpleSlider(){
 
-  const ScrollComponent = ({children}) => {
-  return (<div>{children}</div>)
-}
- 
+  
 
 const photos = [ 
     {
@@ -59,10 +50,6 @@ const settings ={
       arrows:true,
       className:'slides'
      
-      
-       
-     
-      
      
 };
 
@@ -88,13 +75,9 @@ return (
 
 
         }
-   
  
     </Slider>
-  
-    
-    
-   
+
     </div>
      
                    
@@ -102,3 +85,5 @@ return (
 )
 
 }
+
+
