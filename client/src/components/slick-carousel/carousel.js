@@ -35,15 +35,15 @@ const photos = [
 const settings ={
     dots:true,
     infinite:true,
-    speed:500,
     fade: true,
+    lazyLoad: true,
     slidesToShow: 1,
     slidesToScroll:1,
      autoplay: true,
-      speed: 6000,
-      autoplaySpeed: 6000,
-       adaptiveHeight: true,
-      cssEase: "linear",
+      
+      autoplaySpeed: 3000,
+      adaptiveHeight: true,
+      cssEase: "circular",
      
       dotsClass: "slick-dots slick-thumb",
       arrows:true,
