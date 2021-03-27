@@ -36,33 +36,21 @@ const App = ({checkUserSession, currentUser}) => {
       return(
         
      <div>
-     
-       
-        
       
       <GlobalStyle/>
       
       <Header />
-      
-   
-
-   
+  
       <Switch> 
-         
-      
   <Route exact path='/'
       render={() =>
  
   <React.Fragment>
   
       
-    <ReactPageScroller containerHeight='100vh'>
-        
+    <ReactPageScroller>
     <SimpleSlider/>
     <HomePage/>
- 
-    
-   
    </ReactPageScroller >
   </React.Fragment>
 

@@ -9,7 +9,6 @@ import './carousel.scss';
 
 export default function SimpleSlider(){
 
-  
 
 const photos = [ 
     {

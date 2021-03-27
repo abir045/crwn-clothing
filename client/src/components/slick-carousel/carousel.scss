@@ -1,4 +1,4 @@
-// .App-header {
+// .App {
 //   min-height: 100vh;
 //   display: flex;
 //   flex-direction: column;
@@ -9,7 +9,8 @@
 // }
 
 .slides img {
-  height: 80vh;
+  height: 95vh;
+
   @media screen and (max-width: 800px) {
     align-items: center;
   }
