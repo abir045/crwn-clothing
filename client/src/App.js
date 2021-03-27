@@ -27,12 +27,6 @@ const App = ({checkUserSession, currentUser}) => {
      checkUserSession();
    },[checkUserSession]);
 
-   
- 
-  
-
-
-  
       return(
         
      <div>
@@ -46,22 +40,17 @@ const App = ({checkUserSession, currentUser}) => {
       render={() =>
  
   <React.Fragment>
-  
-      
-    <ReactPageScroller>
+  <ReactPageScroller>
     <SimpleSlider/>
     <HomePage/>
    </ReactPageScroller >
   </React.Fragment>
 
 }  /> 
-        
-      
-      <Route path='/shop' component={ShopPage} />
-     <Route exact path='/checkout' component={CheckoutPage} />
     
-     
-      <Route exact path='/signin'
+     <Route path='/shop' component={ShopPage}/>
+     <Route exact path='/checkout' component={CheckoutPage} />
+    <Route exact path='/signin'
     
        render={()=>
          currentUser?(

@@ -30,15 +30,45 @@ const Header = ({currentUser, hidden, signOutStart }) => (
         </LogoContainer>
       
       <ShopContainer>
-          <DropdownButton variant='secondary' id="dropdown-item-button" title="Shop">
+          <DropdownButton variant='light' id="dropdown-item-button" title="Shop">
  
-  <Dropdown.Item href="action-1">
+  {/* <Dropdown.Item href="#/action-1">
       <OptionLink to='/shop'>Shop</OptionLink>
    
-      </Dropdown.Item>
-  <Dropdown.Item href="#/action-1">Sale</Dropdown.Item>
-  <Dropdown.Item href="#/action-1">T-shirts</Dropdown.Item>
+      </Dropdown.Item> */}
+  <Dropdown.Item href="#/action-1">New Arrivals</Dropdown.Item>
+  <Dropdown.Item href="#/action-2"> Sale</Dropdown.Item>
+  
+  
+  <Dropdown.Item href="#/action-2">
+      <OptionLink to='/shop/mens'>T-shirts</OptionLink>
+     
+ </Dropdown.Item>
+ <Dropdown.Item href="#/action-2">
+ <OptionLink to='/shop/hats'>Accessories</OptionLink>
+ </Dropdown.Item>
+
+  <Dropdown.Item href="#/action-2">
+  <OptionLink to='/'>Home</OptionLink>
+  </Dropdown.Item>
+
+ <Dropdown.Item href="#/action-3"> Men </Dropdown.Item>
+ <Dropdown.Item href="#/action-4"> Women </Dropdown.Item>
+ <Dropdown.Item href="#/action-5"> Kids </Dropdown.Item>
+ <Dropdown.Item href="#/action-6"> Collections </Dropdown.Item>
+
+ <Dropdown.Item href="#/action-6">
+      <OptionLink to='/shop/jackets'>Fall-Winter 2022</OptionLink>
+     
+ </Dropdown.Item>
+
+  <Dropdown.Item href="#/action-6">
+      <OptionLink to='/shop/sneakers'>Spring-Summer 2022</OptionLink>
+     
+ </Dropdown.Item>
+
 </DropdownButton>
+
 
 </ShopContainer>
             
