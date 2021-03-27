@@ -6,13 +6,11 @@ export const HomePageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0px 0px  0px 0px;
-  height:100%;
+  height:80%;
   width:100%;
 
 
-   @media screen and (max-height:800px){
-      width: 80%;
-  }
+  
 
 `
 

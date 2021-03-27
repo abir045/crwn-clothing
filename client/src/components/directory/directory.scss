@@ -1,9 +1,13 @@
 .directory-menu {
-  position: absolute;
-  width: 50%;
-  height: 50%;
+  position: relative;
+  width: 70%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-
   justify-content: space-between;
+
+  @media screen and (max-width: 800px) {
+    bottom: 35%;
+    align-items: center;
+  }
 }
