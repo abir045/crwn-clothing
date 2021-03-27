@@ -8,6 +8,13 @@
 //   color: white;
 // }
 
+.slides img {
+  height: 80vh;
+  @media screen and (max-width: 800px) {
+    align-items: center;
+  }
+}
+
 .slides .slick-prev,
 .slides .slick-next {
   position: absolute;
@@ -29,8 +36,14 @@
 
 .slides .slick-prev {
   left: 0%;
+  @media screen and (max-width: 800px) {
+    left: 0%;
+  }
 }
 
 .slides .slick-next {
   left: 3%;
+  @media screen and (max-width: 800px) {
+    left: 5%;
+  }
 }

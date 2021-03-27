@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const CollectionPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-top: 20px;
   
   @media screen and (max-width: 800px) {
     align-items: center;
+    
   }
 `;
 
