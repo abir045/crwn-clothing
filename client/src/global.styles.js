@@ -29,7 +29,9 @@ body {
 
 a {
   text-decoration:none;
-  color: black;
+  //color: black;
+  color: royalblue;
+ // background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
   font-weight: 60px;
   letter-spacing:5px;
   //background:black;
