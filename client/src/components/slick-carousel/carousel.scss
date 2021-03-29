@@ -27,6 +27,7 @@
 
 .slides {
   position: relative;
+  padding-bottom: 20px;
   @media screen and (max-width: 800px) {
     height: fit-content;
   }
@@ -36,6 +37,7 @@
 .slides .slick-next {
   position: absolute;
   top: 50%;
+  height: 10px;
   z-index: 1;
 }
 

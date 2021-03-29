@@ -14,12 +14,14 @@ cursor: pointer;
 
 export const HeaderContainer = styled.div`
 
-
+position:absolute;
  height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
+  z-index: 9;
+  top:0;
 
 
 

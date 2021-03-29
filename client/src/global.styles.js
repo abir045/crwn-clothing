@@ -8,6 +8,8 @@ body {
   background: #79a9bc;
   opacity:0.9;
   padding: 0px 0px 0px 0px;
+  font-weight:700;
+  color:white;
   //transparent;
   //#79a9bc;
     /* fallback for old browsers */
@@ -26,9 +28,11 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration:none;
   color: black;
-  font-weight: 32px;
+  font-weight: 60px;
+  letter-spacing:5px;
+  //background:black;
 }
 
 * {
