@@ -48,7 +48,7 @@ export const LogoContainer = styled(Link)`
   @media screen and (max-width: 800px){
      
       padding:0;
-      width:50%;
+      width:60%;
   }
 
 `
@@ -65,7 +65,7 @@ export const OptionsContainer = styled.div`
    
 
      @media screen and (max-width: 800px){
-     width: 100%;
+     width: 80%;
      text-transform:uppercase;
    
   }
