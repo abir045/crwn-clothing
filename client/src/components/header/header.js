@@ -30,7 +30,7 @@ const Header = ({currentUser, hidden, signOutStart }) => (
         </LogoContainer>
       
       <ShopContainer>
-          <DropdownButton variant='light' id="dropdown-item-button" title="Shop">
+          <DropdownButton variant='dark' id="dropdown-item-button" title="Shop">
  
   {/* <Dropdown.Item href="#/action-1">
       <OptionLink to='/shop'>Shop</OptionLink>

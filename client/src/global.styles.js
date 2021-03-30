@@ -29,13 +29,14 @@ body {
 }
 
 a {
-  text-decoration:none;
-  //color: black;
+  
   color: #2E0B0B;
- // background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+
   font-weight: 400;
-  letter-spacing:1px;
-  //background:black;
+  letter-spacing:2px;
+
+
+  
 }
 
 * {

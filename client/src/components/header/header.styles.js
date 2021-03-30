@@ -8,6 +8,11 @@ const OptionsContainerStyles = css`
 padding: 10px 15px;
 cursor: pointer;
 
+ /* @media screen and (max-width: 800px){
+  color:white;
+  
+  } */
+
 `;
 
 
@@ -29,6 +34,7 @@ position:absolute;
     height: 60px;  
     padding: 10px;
     margin-bottom: 20px;
+  
   }
 
 `
@@ -40,8 +46,7 @@ export const LogoContainer = styled(Link)`
  padding: 15px;
 
   @media screen and (max-width: 800px){
-      /* width: 100px; */
-      /* padding: 25px; */
+     
       padding:0;
       width:50%;
   }
@@ -55,9 +60,14 @@ export const OptionsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    //padding:10px 10px 10px 10px;
+     text-transform:uppercase;
+   
 
      @media screen and (max-width: 800px){
-     width: 80%;
+     width: 100%;
+     text-transform:uppercase;
+   
   }
 
 
@@ -71,10 +81,14 @@ export const ShopContainer = styled.div`
     align-items: center;
     justify-content: flex-start;
     padding: 10px 10px;
+    color:white;
+ 
+  
 
      @media screen and (max-width: 800px){
      width: 80%;
-  }
+     
+     }
 
 
 `
