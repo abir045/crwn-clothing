@@ -1,10 +1,7 @@
-import React, {useEffect, lazy, Suspense } from 'react';
-import {Switch, Route, Redirect } from 'react-router-dom';
-import {connect} from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-
-
-
+import React, { useEffect, lazy, Suspense } from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
 //import HomePage from './pages/homepage/homepage';
 //import ShopPage from './pages/shop/shop';
@@ -12,69 +9,64 @@ import { createStructuredSelector } from 'reselect';
 //import CheckoutPage from './pages/checkout/checkout';
 //import SimpleSlider from './components/slick-carousel/carousel';
 
-import Header from './components/header/header';
-import Spinner from './components/spinner/spinner';
+import Header from "./components/header/header";
+import Spinner from "./components/spinner/spinner";
 
+import { checkUserSession } from "./redux/user/user.actions";
+import { selectCurrentUser } from "./redux/user/user.selector";
+import { GlobalStyle } from "./global.styles";
+import ReactPageScroller from "react-page-scroller";
 
-import {checkUserSession} from './redux/user/user.actions';
-import { selectCurrentUser } from './redux/user/user.selector';
-import { GlobalStyle } from './global.styles';
-import ReactPageScroller from 'react-page-scroller';
+const HomePage = lazy(() => import("./pages/homepage/homepage"));
+const SimpleSlider = lazy(() => import("./components/slick-carousel/carousel"));
+const ShopPage = lazy(() => import("./pages/shop/shop"));
+const AuthPage = lazy(() => import("./pages/auth/auth"));
+const CheckoutPage = lazy(() => import("./pages/checkout/checkout"));
 
-const HomePage = lazy(()=> import ('./pages/homepage/homepage'));
-const SimpleSlider = lazy(()=> import('./components/slick-carousel/carousel'));
-const ShopPage = lazy(()=> import('./pages/shop/shop'));
-const AuthPage = lazy(()=> import('./pages/auth/auth'));
-const CheckoutPage = lazy(()=> import('./pages/checkout/checkout') )
+const App = ({ checkUserSession, currentUser }) => {
+  useEffect(() => {
+    checkUserSession();
+  }, [checkUserSession]);
+  return (
+    <div>
+      <GlobalStyle />
 
-const App = ({checkUserSession, currentUser}) => {
+      <Switch>
+        <Suspense fallback={<Spinner />}>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <React.Fragment>
+                {/* <ReactPageScroller containerHeight="100vh"> */}
 
-   useEffect(() => {
-     checkUserSession();
-   },[checkUserSession]);
-      return(
-        <div>
-      <GlobalStyle/>
-     
-  
-      <Switch> 
-  <Suspense fallback={<Spinner/>}>
-  <Route exact path='/'
-      render={() =>
- 
-   <React.Fragment>
-   {/* <ReactPageScroller containerHeight='100vh'> */}
-     <SimpleSlider/>
-      <Header />
-    <HomePage/>
-  {/* </ReactPageScroller > */}
-  </React.Fragment>}  /> 
+                <Header />
+                <SimpleSlider />
+                <HomePage />
+                {/* </ReactPageScroller> */}
+              </React.Fragment>
+            )}
+          />
 
-    <Route path='/shop' component={ShopPage}/>
-    <Route exact path='/checkout' component={CheckoutPage} />
-    <Route exact path='/signin'
-        render={()=>
-         currentUser?(
-       <Redirect to='/' />
-       ): (
-       <AuthPage/>
-       )
-       } />
-    </Suspense>
-   </Switch>
-    </div> 
-  )  
-}
+          <Route path="/shop" component={ShopPage} />
+          <Route exact path="/checkout" component={CheckoutPage} />
+          <Route
+            exact
+            path="/signin"
+            render={() => (currentUser ? <Redirect to="/" /> : <AuthPage />)}
+          />
+        </Suspense>
+      </Switch>
+    </div>
+  );
+};
 
- const mapStateToProps = createStructuredSelector ({
-   currentUser : selectCurrentUser
- 
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
 
- })
+const mapDispatchToProps = (dispatch) => ({
+  checkUserSession: () => dispatch(checkUserSession()),
+});
 
- const mapDispatchToProps = dispatch => ({
-   checkUserSession: () => dispatch(checkUserSession())
- })
-
-
-export default connect(mapStateToProps,mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);

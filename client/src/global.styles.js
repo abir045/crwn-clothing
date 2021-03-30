@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
  export const GlobalStyle = createGlobalStyle`
 
 body {
-  font-family: "Quando";
+  font-family: "Quando",sans-serif;
   margin:0;
   background: #dbd7d7;
   //#79a9bc;
