@@ -16,7 +16,7 @@ import {HeaderContainer, LogoContainer, OptionsContainer, OptionLink,ShopContain
 
 //import './header.scss';
 
-import { ReactComponent as Logo} from '../../assets/crown.svg';
+import { ReactComponent as Logo} from '../../assets/alvaro.svg';
 
 import DropdownButton from 'react-bootstrap/DropdownButton'
 import Dropdown from 'react-bootstrap/Dropdown';

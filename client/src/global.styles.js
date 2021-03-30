@@ -3,13 +3,14 @@ import { createGlobalStyle } from 'styled-components';
  export const GlobalStyle = createGlobalStyle`
 
 body {
-  font-family: "Open Sans Condensed";
+  font-family: "Quando";
   margin:0;
-  background: #79a9bc;
+  background: #dbd7d7;
+  //#79a9bc;
   opacity:0.9;
   padding: 0px 0px 0px 0px;
   font-weight:700;
-  color:white;
+  color:#2E0B0B;
   //transparent;
   //#79a9bc;
     /* fallback for old browsers */
@@ -30,10 +31,10 @@ body {
 a {
   text-decoration:none;
   //color: black;
-  color: royalblue;
+  color: #2E0B0B;
  // background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
-  font-weight: 60px;
-  letter-spacing:5px;
+  font-weight: 400;
+  letter-spacing:1px;
   //background:black;
 }
 
