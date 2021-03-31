@@ -1,7 +1,9 @@
 import React from "react";
-import { slide as Menu } from "react-burger-menu";
+import { stack as Menu } from "react-burger-menu";
 import "./burger.scss";
 import menu from "../../assets/group3.svg";
+import cross from "../../assets/cross.svg";
+import Animated from "../animated-burger/animatedBurger";
 
 class Burger extends React.Component {
   showSettings(event) {
@@ -14,8 +16,9 @@ class Burger extends React.Component {
         noOverlay
         disableAutoFocus
         isOpen={false}
-        //width={"100%"}
+        width={"100%"}
         customBurgerIcon={<img src={menu} />}
+        //customCrossIcon={<img src={cross} />}
       >
         {/* <h3> */}
         <a className="menu-item" href="/">
