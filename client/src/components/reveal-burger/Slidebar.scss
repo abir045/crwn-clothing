@@ -1,8 +1,10 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: absolute;
+  position: fixed;
   width: 36px;
   height: 30px;
+  left: 36px;
+  top: 36px;
 
   //   left: 36px;
 }
@@ -19,10 +21,11 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
+  position: fixed;
   height: 30px;
   width: 36px;
-  top: 0;
-  left: 0;
+  left: 36px;
+  top: 36px;
 }
 
 /* Color/shape of close button cross */
@@ -38,6 +41,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
+  width: 100%;
   bottom: 0;
   left: 0;
 }
@@ -65,12 +69,17 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Individual item */
 .bm-item {
-  display: flex;
+  display: inline-block;
   color: #dbd7d7;
+  // color: #d1d1d1;
+  margin-bottom: 10px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 /* Styling of overlay */
 .bm-overlay {
   background: #ed3b3b;
-  opacity: 0.5;
+  //   opacity: 0.5;
 }

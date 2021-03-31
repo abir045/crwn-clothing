@@ -1,7 +1,7 @@
 import React from "react";
 import { reveal as Menu } from "react-burger-menu";
 import "./burger.scss";
-import menu from "../../assets/group3.svg";
+import image from "../../assets/group3.svg";
 
 class Burger extends React.Component {
   showSettings(event) {
@@ -18,7 +18,7 @@ class Burger extends React.Component {
           width={"100%"}
           pageWrapId={"page-wrap"}
           outerContainerId={"outer-container"}
-          customBurgerIcon={<img src={menu} />}
+          customBurgerIcon={<img src={image} />}
         >
           {/* <main id="page-wrap"> */}
           <h3>

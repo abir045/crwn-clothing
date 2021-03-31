@@ -9,7 +9,10 @@ import CartDropdown from "../cart-dropdown/cart-dropdown";
 import { selectCartHidden } from "../../redux/cart/cart.selectors";
 import { selectCurrentUser } from "../../redux/user/user.selector";
 import { signOutStart } from "../../redux/user/user.actions";
-import Burger from "../burger-menu/burger";
+//import Burger from "../burger-menu/burger";
+import Sidebar from "../reveal-burger/Sidebar";
+import HomePage from "../../pages/homepage/homepage";
+import SimpleSlider from "../slick-carousel/carousel";
 
 import {
   HeaderContainer,
@@ -31,7 +34,20 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
     </LogoContainer>
 
     <ShopContainer>
-      <Burger />
+      {/* <div id="outer-container">
+        <Sidebar
+          noOverlay
+          pageWrapId={"page-wrap"}
+          outerContainerId={"outer-container"}
+          width={"100%"}
+        />
+        <div id="page-wrap">
+          <SimpleSlider />
+          <HomePage />
+        </div>
+      </div> */}
+
+      {/* <Burger /> */}
     </ShopContainer>
 
     {/* <OptionsContainer> */}
