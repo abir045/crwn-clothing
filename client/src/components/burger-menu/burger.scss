@@ -3,6 +3,8 @@
   position: absolute;
   width: 36px;
   height: 30px;
+  left: 10px;
+  top: 10px;
 
   //   left: 36px;
 }
@@ -21,8 +23,6 @@
 .bm-cross-button {
   height: 30px;
   width: 36px;
-  top: 0;
-  left: 0;
 }
 
 /* Color/shape of close button cross */
@@ -45,9 +45,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* General sidebar styles */
 .bm-menu {
   position: absolute;
+
   background: #ed3b3b;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  font-style: #dbd7d7;
   top: 10%;
   width: 100%;
 }
@@ -65,12 +67,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Individual item */
 .bm-item {
-  display: flex;
+  display: inline-block;
   color: #dbd7d7;
 }
 
 /* Styling of overlay */
 .bm-overlay {
   background: #ed3b3b;
-  opacity: 0.5;
+}
+
+.bm-menu-item {
+  color: #dbd7d7;
 }

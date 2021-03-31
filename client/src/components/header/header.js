@@ -9,10 +9,10 @@ import CartDropdown from "../cart-dropdown/cart-dropdown";
 import { selectCartHidden } from "../../redux/cart/cart.selectors";
 import { selectCurrentUser } from "../../redux/user/user.selector";
 import { signOutStart } from "../../redux/user/user.actions";
-//import Burger from "../burger-menu/burger";
-import Sidebar from "../reveal-burger/Sidebar";
-import HomePage from "../../pages/homepage/homepage";
-import SimpleSlider from "../slick-carousel/carousel";
+import Burger from "../burger-menu/burger";
+//import Sidebar from "../reveal-burger/Sidebar";
+//import HomePage from "../../pages/homepage/homepage";
+//import SimpleSlider from "../slick-carousel/carousel";
 
 import {
   HeaderContainer,
@@ -47,7 +47,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
         </div>
       </div> */}
 
-      {/* <Burger /> */}
+      <Burger />
     </ShopContainer>
 
     {/* <OptionsContainer> */}
