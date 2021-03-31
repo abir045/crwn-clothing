@@ -1,6 +1,7 @@
 import React from "react";
 import { reveal as Menu } from "react-burger-menu";
 import "./burger.scss";
+import menu from "../../assets/group3.svg";
 
 class Burger extends React.Component {
   showSettings(event) {
@@ -11,9 +12,13 @@ class Burger extends React.Component {
     return (
       <div id="outer-container">
         <Menu
+          isOpen={false}
+          noOverlay
+          // noTransition
           width={"100%"}
           pageWrapId={"page-wrap"}
           outerContainerId={"outer-container"}
+          customBurgerIcon={<img src={menu} />}
         >
           {/* <main id="page-wrap"> */}
           <h3>
@@ -21,7 +26,6 @@ class Burger extends React.Component {
               Home
             </a>
           </h3>
-
           <hr
             style={{
               color: "black",
@@ -29,13 +33,11 @@ class Burger extends React.Component {
               // backgroundColor: color,
             }}
           />
-
           <h3>
             <a id="page-wrap  " className="menu-item" href="/shop">
               New Arrivals
             </a>
           </h3>
-
           <hr
             style={{
               color: "black",
@@ -48,7 +50,6 @@ class Burger extends React.Component {
               Men
             </a>
           </h3>
-
           <hr
             style={{
               color: "black",
@@ -68,13 +69,11 @@ class Burger extends React.Component {
               // backgroundColor: color,
             }}
           />
-
           <h3>
             <a id="page-wrap " className="menu-item" href="/shop/hats">
               Accessories
             </a>
           </h3>
-
           <hr
             style={{
               color: "black",
@@ -95,18 +94,18 @@ class Burger extends React.Component {
               // backgroundColor: color,
             }}
           />
-          <h3>
+          {/* &nbsp; */}
+          <br />
+          <br />
+          <h6>
             <a id="page-wrap" className="menu-item" href="/">
-              Shipping Returns/Exchange
+              Shipping
+              <br />
+              Returns/Exchange
               <br />
               Contact
             </a>
-          </h3>
-          {/* 
-          <a onClick={this.showSettings} className="menu-item--small" href="">
-            Settings
-          </a> */}
-          {/* </main> */}
+          </h6>
         </Menu>
         {/* </Menu> */}
       </div>
