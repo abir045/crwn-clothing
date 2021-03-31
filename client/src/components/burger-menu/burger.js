@@ -2,8 +2,6 @@ import React from "react";
 import { stack as Menu } from "react-burger-menu";
 import "./burger.scss";
 import menu from "../../assets/group3.svg";
-import cross from "../../assets/cross.svg";
-import Animated from "../animated-burger/animatedBurger";
 
 class Burger extends React.Component {
   showSettings(event) {
