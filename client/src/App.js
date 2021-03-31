@@ -29,6 +29,7 @@ const App = ({ checkUserSession, currentUser }) => {
   }, [checkUserSession]);
   return (
     <div>
+      <Header />
       <GlobalStyle />
 
       <Switch>
@@ -40,7 +41,6 @@ const App = ({ checkUserSession, currentUser }) => {
               <React.Fragment>
                 {/* <ReactPageScroller containerHeight="100vh"> */}
 
-                <Header />
                 <SimpleSlider />
                 <HomePage />
                 {/* </ReactPageScroller> */}

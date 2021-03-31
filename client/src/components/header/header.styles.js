@@ -63,17 +63,16 @@ export const OptionsContainer = styled.div`
 export const ShopContainer = styled.div`
   position: absolute;
   height: 100%;
-  width: 80px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  width: 100%;
   padding: 10px 10px;
-  color: white;
-  left: 20%;
+  //display: flex;
+  //align-items: center;
+  //justify-content: flex-start;
+
+  //color: white;
 
   @media screen and (max-width: 800px) {
-    width: 70%;
+    width: 80%;
   }
 `;
 
