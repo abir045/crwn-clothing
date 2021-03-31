@@ -14,7 +14,7 @@ class Burger extends React.Component {
         noOverlay
         disableAutoFocus
         isOpen={false}
-        width={"100%"}
+        //width={"100%"}
         customBurgerIcon={<img src={menu} />}
       >
         {/* <h3> */}
