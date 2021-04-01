@@ -21,6 +21,7 @@ export const StyledMenu = styled.nav`
   transform: translateY(-10%);
   transform: translateY(-10%); */
   //transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+
   transform: ${({ open }) =>
     // open ? "translateX(0) translateY(10%)" : "translateY(0)translateX(-100%)"};
     open ? "translateX(0) " : "translateX(-100%)"};
@@ -38,8 +39,15 @@ export const StyledMenu = styled.nav`
     letter-spacing: 0.5rem;
     color: #dbd7d7;
     text-decoration: none;
-    transition: color 0.1s linear;
+    //text transition
+    //transition: width 0.1s linear;
+    //transition: transform 0.3s ease-in-out 0.2s;
     //linear;
+    transition: color 2s linear 1s;
+    z-index: 9;
+    transform: ${({ open }) =>
+      // open ? "translateX(0) translateY(10%)" : "translateY(0)translateX(-100%)"};
+      open ? "translateX(0)translateY(0) " : "translateX(-25%)"};
 
     :last-child {
       font-size: 0.9rem;
