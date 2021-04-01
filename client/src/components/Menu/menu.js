@@ -5,15 +5,14 @@ import { StyledMenu } from "./menu.styled";
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <a className="menu-item" href="/">
-        Home
-      </a>
+      <a href="/">Home</a>
       {/* </h3> */}
 
       <hr
         style={{
           color: "black",
           border: "1px solid black",
+          width: "80%",
         }}
       />
       {/* <h3> */}
@@ -25,6 +24,7 @@ const Menu = ({ open }) => {
         style={{
           color: "black",
           border: "1px solid black",
+          width: "80%",
         }}
       />
       {/* <h3> */}
@@ -36,40 +36,38 @@ const Menu = ({ open }) => {
         style={{
           color: "black",
           border: "1px solid black",
+          width: "80%",
         }}
       />
       {/* <h3> */}
-      <a className="menu-item" href="/shop/womens">
-        Women
-      </a>
+      <a href="/shop/womens">Women</a>
       {/* </h3> */}
       <hr
         style={{
           color: "black",
           border: "1px solid black",
+          width: "80%",
         }}
       />
       {/* <h3> */}
-      <a className="menu-item" href="/shop/hats">
-        Accessories
-      </a>
+      <a href="/shop/hats">Accessories</a>
       {/* </h3> */}
       <hr
         style={{
           color: "black",
           border: "1px solid black",
+          width: "80%",
         }}
       />
       {/* <h3> */}
-      <a className="menu-item" href="/">
-        About
-      </a>
+      <a href="/">About</a>
       {/* </h3> */}
 
       <hr
         style={{
           color: "black",
           border: "1px solid black",
+          width: "80%",
         }}
       />
 
