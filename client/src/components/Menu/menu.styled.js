@@ -47,7 +47,7 @@ export const StyledMenu = styled.nav`
     z-index: 9;
     transform: ${({ open }) =>
       // open ? "translateX(0) translateY(10%)" : "translateY(0)translateX(-100%)"};
-      open ? "translateX(0)translateY(0) " : "translateX(-25%)"};
+      open ? "translateX(0) " : "translateX(-25%)"};
 
     :last-child {
       font-size: 0.9rem;
