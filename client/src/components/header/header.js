@@ -47,7 +47,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
         </div>
       </div> */}
 
-      <Burger />
+      {/* <Burger /> */}
     </ShopContainer>
 
     {/* <OptionsContainer> */}

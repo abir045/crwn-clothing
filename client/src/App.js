@@ -1,4 +1,4 @@
-import React, { useEffect, lazy, Suspense } from "react";
+import React, { useEffect, lazy, Suspense, useState } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
@@ -15,6 +15,8 @@ import Spinner from "./components/spinner/spinner";
 import { checkUserSession } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selector";
 import { GlobalStyle } from "./global.styles";
+import Burger from "./components/animated-burger/animatedBurger";
+import Menu from "./components/Menu/menu";
 
 const HomePage = lazy(() => import("./pages/homepage/homepage"));
 const SimpleSlider = lazy(() => import("./components/slick-carousel/carousel"));
@@ -26,6 +28,8 @@ const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {
     checkUserSession();
   }, [checkUserSession]);
+
+  const [open, setOpen] = useState(false);
 
   return (
     <div>
@@ -40,8 +44,12 @@ const App = ({ checkUserSession, currentUser }) => {
             path="/"
             render={() => (
               <React.Fragment>
-                <SimpleSlider />
-                <HomePage />
+                <div>
+                  <Burger open={open} setOpen={setOpen} />
+                  <Menu open={open} setOpen={setOpen} />
+                  <SimpleSlider />
+                  <HomePage />
+                </div>
               </React.Fragment>
             )}
           />

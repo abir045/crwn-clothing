@@ -1,27 +1,21 @@
-import React, { Component } from "react";
-import { HamburgerCollapse } from "react-animated-burgers";
+import React from "react";
+import { bool, func } from "prop-types";
 
-class Animated extends Component {
-  state = {
-    isActive: false,
-  };
+import { StyledBurger } from "./burger.styled";
 
-  toggleButton = () => {
-    this.setState({
-      isActive: !this.state.isActive,
-    });
-  };
+const Burger = ({ open, setOpen }) => {
+  return (
+    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <div />
+      <div />
+      <div />
+    </StyledBurger>
+  );
+};
 
-  render() {
-    return (
-      <HamburgerCollapse
-        isActive={this.state.isActive}
-        toggleButton={this.toggleButton}
-        //buttonColor="#FFBC67"
-        barColor="black"
-      />
-    );
-  }
-}
+Burger.propTypes = {
+  open: bool.isRequired,
+  setOpen: func.isRequired,
+};
 
-export default Animated;
+export default Burger;
