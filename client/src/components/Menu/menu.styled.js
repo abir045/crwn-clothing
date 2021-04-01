@@ -10,10 +10,10 @@ export const StyledMenu = styled.nav`
   //padding: 1rem;
   position: absolute;
 
-  top: 10%;
+  top: 5rem;
   left: 0;
   width: 100vw;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out 0.2s;
   transform: translateX(-100%);
   transform: translateX(-100%);
   transform: translateX(-100%);

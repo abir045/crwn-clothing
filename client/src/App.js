@@ -44,12 +44,12 @@ const App = ({ checkUserSession, currentUser }) => {
             path="/"
             render={() => (
               <React.Fragment>
-                <div>
+                {/* <div>
                   <Burger open={open} setOpen={setOpen} />
                   <Menu open={open} setOpen={setOpen} />
-                  <SimpleSlider />
-                  <HomePage />
-                </div>
+                </div> */}
+                <SimpleSlider />
+                <HomePage />
               </React.Fragment>
             )}
           />
