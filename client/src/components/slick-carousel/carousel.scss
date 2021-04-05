@@ -9,13 +9,14 @@
 // }
 
 .slides img {
-  height: 60vh;
+  position: relative;
+  left: 15%;
+  height: 70vh;
   width: 50vw;
 
   @media screen and (max-width: 800px) {
-    align-items: center;
-    // width: 50vw;
-    // height: 60vh;
+    height: 50vh;
+    width: 60vw;
   }
 }
 
@@ -39,24 +40,24 @@
 
 .slick-dots {
   position: absolute;
-  right: 40%;
+  bottom: 20%;
+  right: 45%;
   //z-index: 1;
 }
 
 .slides .slick-prev,
 .slides .slick-next {
   position: absolute;
-  top: 102%;
-  //height: 20px;
-  //width: 20px;
-  // left: 10%;
+  top: 95%;
+
+  margin-left: 45%;
   background: transparent;
   color: black;
-  //z-index: 1;
+  z-index: 9;
 }
 
 .slides .slick-prev {
-  left: 20%;
+  left: 15%;
 
   @media screen and (max-width: 800px) {
     left: 25%;
@@ -64,23 +65,27 @@
 }
 
 .slides .slick-next {
-  left: 22%;
+  left: 25%;
 
   @media screen and (max-width: 800px) {
-    left: 30%;
+    left: 35%;
   }
 }
 
 .text {
   position: absolute;
   color: black;
-  top: 2%;
-  left: 48%;
 
-  font-size: 72px;
+  top: 2%;
+  left: 64%;
+
+  height: 60vh;
+  font-size: 64px;
+
   z-index: 9;
 
   @media screen and (max-width: 800px) {
-    font-size: 38px;
+    font-size: 42px;
+    margin-left: 35px;
   }
 }

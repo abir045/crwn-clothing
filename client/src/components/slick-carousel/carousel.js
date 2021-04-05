@@ -40,7 +40,7 @@ export default function SimpleSlider() {
     autoplay: true,
     dotsClass: "slick-dots",
     autoplaySpeed: 3000,
-    adaptiveHeight: true,
+
     cssEase: "linear",
     accessibility: true,
 
@@ -56,7 +56,10 @@ export default function SimpleSlider() {
           return (
             <div className="App" key={photo.toString()}>
               <img width="100%" src={photo.url} />
-              <h3 className="text">Live your dream and rise</h3>
+              <h1 className="text">
+                Live your dream
+                <br /> and rise
+              </h1>
             </div>
           );
         })}
