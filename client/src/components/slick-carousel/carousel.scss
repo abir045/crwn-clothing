@@ -53,7 +53,7 @@
   margin-left: 45%;
   background: transparent;
   color: black;
-  z-index: 9;
+  // z-index: 9;
 }
 
 .slides .slick-prev {
@@ -85,7 +85,7 @@
   z-index: 9;
 
   @media screen and (max-width: 800px) {
-    font-size: 42px;
-    margin-left: 35px;
+    font-size: 32px;
+    margin-left: 40px;
   }
 }
