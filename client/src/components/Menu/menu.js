@@ -9,6 +9,7 @@ const Menu = ({ open }) => {
       {/* </h3> */}
 
       <hr
+        className="move"
         style={{
           color: "black",
           border: "1px solid black",

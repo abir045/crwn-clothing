@@ -29,8 +29,6 @@ const App = ({ checkUserSession, currentUser }) => {
     checkUserSession();
   }, [checkUserSession]);
 
-  const [open, setOpen] = useState(false);
-
   return (
     <div>
       <Header />
@@ -44,12 +42,8 @@ const App = ({ checkUserSession, currentUser }) => {
             path="/"
             render={() => (
               <React.Fragment>
-                {/* <div>
-                  <Burger open={open} setOpen={setOpen} />
-                  <Menu open={open} setOpen={setOpen} />
-                </div> */}
                 <SimpleSlider />
-                <HomePage />
+                {/* <HomePage /> */}
               </React.Fragment>
             )}
           />

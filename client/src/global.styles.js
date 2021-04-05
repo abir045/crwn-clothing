@@ -3,13 +3,13 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 body {
-  font-family: "Quando",sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   margin:0;
   background: #dbd7d7;
   //#79a9bc;
   opacity:0.9;
   padding: 0px 0px 0px 0px;
-  font-weight:700;
+  font-weight:400;
   color:#2E0B0B;
   //transparent;
   //#79a9bc;

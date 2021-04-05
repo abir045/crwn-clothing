@@ -9,18 +9,20 @@
 // }
 
 .slides img {
-  height: 90vh;
-  width: 100vw;
+  height: 60vh;
+  width: 50vw;
 
   @media screen and (max-width: 800px) {
     align-items: center;
-    height: 60vh;
+    // width: 50vw;
+    // height: 60vh;
   }
 }
 
 .slides .slick-prev,
 .slides .slick-next {
   position: absolute;
+  background-color: black;
   top: 20%;
   left: 0%;
   z-index: 1;
@@ -28,30 +30,57 @@
 
 .slides {
   position: relative;
-  padding-bottom: 20px;
+  width: 100%;
+  //padding-bottom: 20px;
   @media screen and (max-width: 800px) {
     height: fit-content;
   }
 }
 
+.slick-dots {
+  position: absolute;
+  right: 40%;
+  //z-index: 1;
+}
+
 .slides .slick-prev,
 .slides .slick-next {
   position: absolute;
-  top: 50%;
-  height: 10px;
-  z-index: 1;
+  top: 102%;
+  //height: 20px;
+  //width: 20px;
+  // left: 10%;
+  background: transparent;
+  color: black;
+  //z-index: 1;
 }
 
 .slides .slick-prev {
-  left: 0%;
+  left: 20%;
+
   @media screen and (max-width: 800px) {
-    left: 0%;
+    left: 25%;
   }
 }
 
 .slides .slick-next {
-  left: 3%;
+  left: 22%;
+
   @media screen and (max-width: 800px) {
-    left: 5%;
+    left: 30%;
+  }
+}
+
+.text {
+  position: absolute;
+  color: black;
+  top: 2%;
+  left: 48%;
+  right: 7%;
+  font-size: 72px;
+  z-index: 9;
+
+  @media screen and (max-width: 800px) {
+    font-size: 38px;
   }
 }
