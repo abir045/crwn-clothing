@@ -10,13 +10,14 @@
 
 .slides img {
   position: relative;
-  left: 10%;
+  left: 20%;
   height: 80vh;
   width: 30vw;
 
   @media screen and (max-width: 800px) {
     width: 48vw;
     height: 60vh;
+    left: 10%;
   }
 }
 
