@@ -11,7 +11,7 @@
 .slides img {
   position: relative;
   left: 20%;
-  height: 80vh;
+  height: 85vh;
   width: 30vw;
 
   @media screen and (max-width: 800px) {
@@ -52,24 +52,26 @@
 .slides .slick-prev,
 .slides .slick-next {
   position: absolute;
+  background-size: 20px 20px;
   top: 95%;
-
-  margin-left: 30%;
+  width: 50%;
+  margin-left: 10%;
   background: transparent;
   color: black;
   // z-index: 9;
 }
 
 .slides .slick-prev {
-  left: 15%;
+  left: 35%;
 
+  background-size: 10px 10px;
   @media screen and (max-width: 800px) {
     left: 25%;
   }
 }
 
 .slides .slick-next {
-  left: 25%;
+  right: 45%;
 
   @media screen and (max-width: 800px) {
     left: 35%;
@@ -91,5 +93,29 @@
   @media screen and (max-width: 800px) {
     font-size: 32px;
     margin-left: 7%;
+  }
+}
+
+.slick-arrow-left img {
+  position: absolute;
+  width: 5%;
+  height: auto;
+  top: 80%;
+  left: 48%;
+  z-index: 9;
+  @media screen and (max-width: 800px) {
+    left: 56%;
+  }
+}
+
+.slick-arrow-right img {
+  position: absolute;
+  width: 5%;
+  height: auto;
+  top: 80%;
+  left: 55%;
+  z-index: 9;
+  @media screen and (max-width: 800px) {
+    left: 62%;
   }
 }

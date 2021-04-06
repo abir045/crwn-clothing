@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100" height="100" viewBox="0 0 100 100" xml:space="preserve">
+<desc>Created with Fabric.js 4.2.0</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+<g transform="matrix(1 0 0 1 50 50)" id="cb1a621e-df33-43fa-a935-6b7ad0a31a40"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-50" y="-50" rx="0" ry="0" width="100" height="100" />
+</g>
+<g transform="matrix(0 0 0 0 0 0)" id="330c1461-1785-4514-92ac-df7f6efb8769"  >
+</g>
+<g transform="matrix(1 0 0 1 50 50)" id="2475a4bd-99e2-4fba-9185-fddaee2f8cd5"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABbUlEQVRoQ+2ZsUrEQBCGv3slLXwGkWtFEC0EQTgQLARBEARBsBBEOUGwEAQLGxHB1icQ38UXkC0GNORMbrLhJj+7bdiZ/9t/kt2djBAZIxEOCkg0J4sjxZGeVqCUVk8L6w7bxZEVYBV4Ab7cCjJN9IKcAKe/NCwDn5k0ucJ4QI6Bs0q2R2DLpSDTpHlBjoDzmtz7wHUmTa4w84AcAhc1WZ6BdVf2jJPaghwAl1Ehkq42IKlsriJDtAGZADfRIZpA9oDbIUD8B7IL3A0FYhbIDnA/JIg6kG3gYWgQVZBNIO3Q1RFin2jacuzzuwE8zYCYNgVZ8PMPc2QNeFuwmC7pv4Gl5MgrMO4SKcDcdykQmdJKlSHxsluJS3x+DUZiQzQYiSOKwUgcGg1G4hhvMBIXK4ORuOoajETzwWAk2kEGI9GgMxiJlqnBSDSxDUbit0KAu9RfCW1apuFE1wkqINFsKo4UR3pagVJaPS2sO+wPVgJB59e8Rw4AAAAASUVORK5CYII=" x="-25" y="-25" width="50" height="50"></image>
+</g>
+</svg>

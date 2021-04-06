@@ -3,10 +3,38 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import leftArrow from "../../assets/l1.svg";
+import rightArrow from "../../assets/r1.svg";
 
 import "./carousel.scss";
 
 export default function SimpleSlider() {
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className="slick-arrow-right"
+        style={{ ...style, display: "block", width: "10px" }}
+        onClick={onClick}
+      >
+        <img src={rightArrow} />
+      </div>
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className="slick-arrow-left"
+        style={{ ...style, display: "block", width: "10px" }}
+        onClick={onClick}
+      >
+        <img src={leftArrow} />
+      </div>
+    );
+  }
+
   const photos = [
     {
       name: "Photo 1",
@@ -45,8 +73,10 @@ export default function SimpleSlider() {
     accessibility: true,
 
     // dotsClass: "slick-dots slick-thumb",
-    arrows: true,
+    //arrows: true,
     className: "slides",
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
