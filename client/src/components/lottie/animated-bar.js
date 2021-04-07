@@ -14,10 +14,12 @@ const AnimatedBar = (props) => {
         speed="0.5"
         mode="bounce"
         src="https://assets1.lottiefiles.com/packages/lf20_cfmqvt5b.json"
+        //"https://lottiefiles.com/share/lecz42ld"
+        //
         //{{ json }}
         //"../../lf30_editor_rviu5hh6.json"
 
-        style={{ width: "200px" }}
+        style={{ width: "100px", height: "100px" }}
       ></lottie-player>
     </div>
   );
