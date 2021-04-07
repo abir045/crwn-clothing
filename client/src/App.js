@@ -17,6 +17,7 @@ import { selectCurrentUser } from "./redux/user/user.selector";
 import { GlobalStyle } from "./global.styles";
 import Burger from "./components/animated-burger/animatedBurger";
 import Menu from "./components/Menu/menu";
+import AnimatedBar from "./components/lottie/animated-bar";
 
 const HomePage = lazy(() => import("./pages/homepage/homepage"));
 const SimpleSlider = lazy(() => import("./components/slick-carousel/carousel"));
@@ -43,6 +44,7 @@ const App = ({ checkUserSession, currentUser }) => {
             render={() => (
               <React.Fragment>
                 <SimpleSlider />
+                <AnimatedBar />
                 {/* <HomePage /> */}
               </React.Fragment>
             )}

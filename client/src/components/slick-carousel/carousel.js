@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import leftArrow from "../../assets/l1.svg";
 import rightArrow from "../../assets/r1.svg";
+import loading from "../../assets/loading.svg";
+import AnimatedBar from "../lottie/animated-bar";
 
 import "./carousel.scss";
 
@@ -69,6 +71,22 @@ export default function SimpleSlider() {
     dotsClass: "slick-dots",
     autoplaySpeed: 3000,
 
+    // custom dots
+    // appendDots: (dots) => {
+    //   return <ul style={{ margin: "0px" }}>{dots}</ul>;
+    // },
+    // customPaging: (pagi, i) => {
+    //   const style = {
+    //     // width: 33,
+    //     // height: 33,
+    //     display: "inline-block",
+    //     backgroundImage: { loading },
+    //     // `url(../../assets/loading.svg)`, // need to change as navigator-active.png this when active
+    //     backgroundSize: "contain",
+    //     backgroundRepeat: "no-repeat",
+    //   };
+    //   return <a className="slick-dot" style={style} />;
+    // },
     cssEase: "linear",
     accessibility: true,
 
@@ -85,6 +103,7 @@ export default function SimpleSlider() {
         {photos.map((photo) => {
           return (
             <div className="App" key={photo.toString()}>
+              {/* <AnimatedBar /> */}
               <img src={photo.url} />
               <h1 className="text">
                 Live your dream
