@@ -14,7 +14,7 @@ export default function SimpleSlider() {
     return (
       <div
         className="slick-arrow-right"
-        style={{ ...style, display: "block", width: "10px" }}
+        style={{ ...style, display: "block" }}
         onClick={onClick}
       >
         <img src={rightArrow} />
@@ -27,7 +27,7 @@ export default function SimpleSlider() {
     return (
       <div
         className="slick-arrow-left"
-        style={{ ...style, display: "block", width: "10px" }}
+        style={{ ...style, display: "block" }}
         onClick={onClick}
       >
         <img src={leftArrow} />
@@ -85,7 +85,7 @@ export default function SimpleSlider() {
         {photos.map((photo) => {
           return (
             <div className="App" key={photo.toString()}>
-              <img width="100%" src={photo.url} />
+              <img src={photo.url} />
               <h1 className="text">
                 Live your dream
                 <br /> and rise

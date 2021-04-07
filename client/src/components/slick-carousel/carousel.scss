@@ -1,33 +1,15 @@
-// .App {
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-
-//   color: white;
-// }
-
 .slides img {
   position: relative;
-  left: 20%;
+  left: 15%;
+  width: 35vw;
   height: 85vh;
-  width: 30vw;
+  z-index: 9;
 
   @media screen and (max-width: 800px) {
     width: 48vw;
     height: 60vh;
     left: 10%;
   }
-}
-
-.slides .slick-prev,
-.slides .slick-next {
-  position: absolute;
-  background-color: black;
-  top: 20%;
-  left: 0%;
-  z-index: 1;
 }
 
 .slides {
@@ -49,73 +31,54 @@
   }
 }
 
-.slides .slick-prev,
-.slides .slick-next {
-  position: absolute;
-  background-size: 20px 20px;
-  top: 95%;
-  width: 50%;
-  margin-left: 10%;
-  background: transparent;
-  color: black;
-  // z-index: 9;
-}
-
-.slides .slick-prev {
-  left: 35%;
-
-  background-size: 10px 10px;
-  @media screen and (max-width: 800px) {
-    left: 25%;
-  }
-}
-
-.slides .slick-next {
-  right: 45%;
-
-  @media screen and (max-width: 800px) {
-    left: 35%;
-  }
-}
-
 .text {
   position: absolute;
   color: black;
+  height: 70vh;
+  width: auto;
 
   top: 2%;
   left: 49%;
 
-  height: 60vh;
   font-size: 64px;
 
   z-index: 9;
 
+  // @media screen and (max-width: 1280px) {
+  //   left: 64%;
+  //   width: 40%;
+  // }
+
   @media screen and (max-width: 800px) {
     font-size: 32px;
     margin-left: 7%;
+    // left: 67%;
+    // width: 40%;
   }
 }
 
 .slick-arrow-left img {
   position: absolute;
-  width: 5%;
+  width: 3%;
   height: auto;
   top: 80%;
   left: 48%;
-  z-index: 9;
+  z-index: 7;
   @media screen and (max-width: 800px) {
     left: 56%;
+    width: 6%;
   }
 }
 
 .slick-arrow-right img {
   position: absolute;
-  width: 5%;
+  width: 3%;
   height: auto;
   top: 80%;
   left: 55%;
-  z-index: 9;
+  z-index: 7;
   @media screen and (max-width: 800px) {
-    left: 62%;
+    left: 65%;
+    width: 6%;
   }
 }
