@@ -17,19 +17,63 @@
   @media screen and (max-width: 800px) {
     width: 48vw;
     height: 60vh;
-    left: 10%;
+    left: 15%;
   }
 }
 
-.slick-dots {
+// .slick-dots {
+//   position: absolute;
+
+//   //background-image: url("../../assets/bars.svg");
+//   bottom: 20%;
+//   right: 45%;
+//   //z-index: 1;
+//   @media screen and (max-width: 800px) {
+//     right: 35%;
+//   }
+
+.append {
   position: absolute;
-  bottom: 20%;
-  right: 45%;
-  //z-index: 1;
+  bottom: 16rem;
+  left: 0%;
+  height: 20px;
   @media screen and (max-width: 800px) {
-    right: 35%;
+    width: 5px;
+    //left: 0%;
+    height: 5px;
   }
 }
+
+.fill {
+  color: black;
+}
+
+.label {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+
+// .slick-dots.slick-thumb {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+// }
+
+// .slick-dots.slick-thumb div {
+//   width: 6px;
+//   height: 6px;
+//   margin: 0 3px;
+//   border-radius: 999px;
+//   transition: all 0.5s ease-in-out;
+//   will-change: width;
+//   background-color: black;
+// }
+
+// .slick-dots.slick-thumb div.slick-active {
+//   background-color: red;
+//   width: 24px;
+// }
 
 .text {
   position: absolute;
@@ -51,7 +95,7 @@
 
   @media screen and (max-width: 800px) {
     font-size: 32px;
-    margin-left: 7%;
+    margin-left: 12%;
     // left: 67%;
     // width: 40%;
   }

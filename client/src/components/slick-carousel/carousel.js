@@ -5,8 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import leftArrow from "../../assets/l1.svg";
 import rightArrow from "../../assets/r1.svg";
-import loading from "../../assets/loading.svg";
+//import loading from "../../assets/loading.svg";
 import AnimatedBar from "../lottie/animated-bar";
+import loading from "../../assets/loading.svg";
 
 import "./carousel.scss";
 
@@ -39,22 +40,24 @@ export default function SimpleSlider() {
 
   const photos = [
     {
-      name: "Photo 1",
+      name: "1",
       url:
         "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+
+      image: { loading },
     },
     {
-      name: "Photo 2",
+      name: "2",
       url:
         "https://images.unsplash.com/photo-1570057625911-b768d8b8562a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=623&q=80",
     },
     {
-      name: "Photo 3",
+      name: "3",
       url:
         "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=662&q=80",
     },
     {
-      name: "Photo 4",
+      name: "4",
       url:
         "https://images.unsplash.com/photo-1589173239067-1c7ee83112b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
     },
@@ -68,25 +71,36 @@ export default function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    dotsClass: "slick-dots",
+    //dotsClass: "slick-dots slick-thumbs",
     autoplaySpeed: 3000,
 
-    // custom dots
-    // appendDots: (dots) => {
-    //   return <ul style={{ margin: "0px" }}>{dots}</ul>;
-    // },
-    // customPaging: (pagi, i) => {
-    //   const style = {
-    //     // width: 33,
-    //     // height: 33,
-    //     display: "inline-block",
-    //     backgroundImage: { loading },
-    //     // `url(../../assets/loading.svg)`, // need to change as navigator-active.png this when active
-    //     backgroundSize: "contain",
-    //     backgroundRepeat: "no-repeat",
-    //   };
-    //   return <a className="slick-dot" style={style} />;
-    // },
+    appendDots: (dots) => (
+      <div
+        style={{
+          //backgroundColor: "#ddd",
+          borderRadius: "10px",
+          padding: "10px",
+          color: "black",
+        }}
+      >
+        <ul className="append" style={{}}>
+          {dots}
+        </ul>
+      </div>
+    ),
+    customPaging: (i) => (
+      <div
+        style={{
+          width: "20px",
+          height: "10px",
+          color: "blue",
+          border: "1px black solid",
+        }}
+      >
+        {<div className="fill" />}
+      </div>
+    ),
+
     cssEase: "linear",
     accessibility: true,
 
@@ -109,6 +123,10 @@ export default function SimpleSlider() {
                 Live your dream
                 <br /> and rise
               </h1>
+              <h2 className="label"> {photo.name}</h2>
+              {/* <span>
+                <img src={photo.image} />
+              </span> */}
             </div>
           );
         })}
