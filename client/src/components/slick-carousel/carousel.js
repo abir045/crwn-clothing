@@ -91,13 +91,15 @@ export default function SimpleSlider() {
     customPaging: (i) => (
       <div
         className="ft-slick__dots--custom"
-        style={{
-          width: "20px",
-          height: "10px",
-          color: "blue",
-          background: "black",
-          border: "1px black solid",
-        }}
+        style={
+          {
+            // width: "20px",
+            // height: "10px",
+            // color: "blue",
+            // background: "black",
+            // border: "1px black solid",
+          }
+        }
       >
         {<div className="loading" />}
       </div>
