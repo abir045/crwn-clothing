@@ -1,11 +1,12 @@
 .animated-bar {
   position: relative;
-  left: 38%;
-  margin-top: 35%;
-  transform: rotate(90deg);
+  left: 68%;
+  //margin-bottom: 5rem;
+  margin-top: -25%;
+  // transform: rotate(90deg);
   //z-index: 9;
-
   @media screen and (max-width: 800px) {
-    margin-top: 10%;
+    margin-top: -40%;
+    left: 48%;
   }
 }

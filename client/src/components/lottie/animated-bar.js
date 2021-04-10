@@ -12,9 +12,10 @@ const AnimatedBar = (props) => {
         autoplay
         //controls
         loop
-        speed="0.5"
+        speed="1"
         mode="bounce"
-        src="https://assets1.lottiefiles.com/packages/lf20_cfmqvt5b.json"
+        src="https://assets4.lottiefiles.com/packages/lf20_jfchliut.json"
+        //"https://assets1.lottiefiles.com/packages/lf20_cfmqvt5b.json"
         //"../../42807-funky-loader.json"
         //
         //"https://lottiefiles.com/share/lecz42ld"
@@ -22,7 +23,7 @@ const AnimatedBar = (props) => {
         //{{ json }}
         //"../../lf30_editor_rviu5hh6.json"
 
-        style={{ width: "100px", height: "100px" }}
+        style={{ width: "300px", height: "300px" }}
       ></lottie-player>
     </div>
   );
