@@ -2,7 +2,8 @@ import "@lottiefiles/lottie-player";
 //import * as LottiePlayer from "@lottiefiles/lottie-player";
 import React from "react";
 import "./lottie.scss";
-import json from "../../lf30_editor_rviu5hh6.json";
+//import json from "../../lf30_editor_rviu5hh6.json";
+import "../../42807-funky-loader.json";
 
 const AnimatedBar = (props) => {
   return (
@@ -14,6 +15,8 @@ const AnimatedBar = (props) => {
         speed="0.5"
         mode="bounce"
         src="https://assets1.lottiefiles.com/packages/lf20_cfmqvt5b.json"
+        //"../../42807-funky-loader.json"
+        //
         //"https://lottiefiles.com/share/lecz42ld"
         //
         //{{ json }}

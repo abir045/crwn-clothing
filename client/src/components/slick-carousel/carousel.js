@@ -90,14 +90,16 @@ export default function SimpleSlider() {
     ),
     customPaging: (i) => (
       <div
+        className="ft-slick__dots--custom"
         style={{
           width: "20px",
           height: "10px",
           color: "blue",
+          background: "black",
           border: "1px black solid",
         }}
       >
-        {<div className="fill" />}
+        {<div className="loading" />}
       </div>
     ),
 
@@ -123,7 +125,7 @@ export default function SimpleSlider() {
                 Live your dream
                 <br /> and rise
               </h1>
-              <h2 className="label"> {photo.name}</h2>
+              {/* <h2 className="label"> {photo.name}</h2> */}
               {/* <span>
                 <img src={photo.image} />
               </span> */}
