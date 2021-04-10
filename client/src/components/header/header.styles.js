@@ -15,7 +15,7 @@ const OptionsContainerStyles = css`
 export const HeaderContainer = styled.div`
   position: sticky;
   height: 70px;
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-between;
   background: #dbd7d7;
@@ -34,12 +34,13 @@ export const LogoContainer = styled(Link)`
   height: 100px;
   width: 110px;
   padding: 10px 10px 10px 10px;
-  position: sticky;
+  position: absolute;
+  top: 1.3rem;
   left: 50%;
   @media screen and (max-width: 800px) {
     padding: 0;
     width: 70px;
-    left: 40%;
+    left: 46%;
     //width:100px;
     /* width:60%; */
   }

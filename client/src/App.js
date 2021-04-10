@@ -44,7 +44,7 @@ const App = ({ checkUserSession, currentUser }) => {
             render={() => (
               <React.Fragment>
                 <SimpleSlider />
-                <AnimatedBar />
+                {/* <AnimatedBar /> */}
                 {/* <HomePage /> */}
               </React.Fragment>
             )}

@@ -67,12 +67,12 @@ export default function SimpleSlider() {
     dots: true,
     infinite: true,
     fade: true,
-    lazyLoad: true,
+    //lazyLoad: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     //dotsClass: "slick-dots slick-thumbs",
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
 
     appendDots: (dots) => (
       <div
@@ -121,12 +121,12 @@ export default function SimpleSlider() {
         {photos.map((photo) => {
           return (
             <div className="App" key={photo.toString()}>
-              {/* <AnimatedBar /> */}
               <img src={photo.url} />
-              <h1 className="text">
+              <h3 className="text">
                 Live your dream
                 <br /> and rise
-              </h1>
+              </h3>
+              <AnimatedBar />
               {/* <h2 className="label"> {photo.name}</h2> */}
               {/* <span>
                 <img src={photo.image} />
